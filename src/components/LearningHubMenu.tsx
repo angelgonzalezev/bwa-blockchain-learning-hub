@@ -53,7 +53,7 @@ export default function LearningHubsMenu() {
 						<a
 							key={hub.name}
 							href={hub.url}
-							target={hub.url === window.location.href ? "_self" : "_blank"}
+							target={hub.url === window.location.href ? "_self" : "_self"}
 							rel={hub.url === window.location.href ? undefined : "noopener noreferrer"}
 							className="block px-4 py-3 hover:bg-gray-50 transition-colors group"
 							onClick={() => setIsOpen(false)}
