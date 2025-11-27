@@ -38,7 +38,7 @@ function App() {
 	return (
 		<div className="min-h-screen bg-[#faf9f6]">
 			<header className="bg-white border-b border-gray-100 sticky top-0 z-50">
-				<div className="flex row-auto justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+				<div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 					<div className="flex items-center gap-3">
 						<a
 							href="https://buildwithangel.com/"
@@ -54,7 +54,9 @@ function App() {
 							<p className="text-sm text-gray-600 mt-0.5">Your comprehensive guide to blockchain development</p>
 						</div>
 					</div>
-					<LearningHubsMenu />
+					<div className="w-full sm:w-auto flex justify-start sm:justify-end">
+						<LearningHubsMenu />
+					</div>
 				</div>
 			</header>
 

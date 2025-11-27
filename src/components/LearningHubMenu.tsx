@@ -36,10 +36,10 @@ export default function LearningHubsMenu() {
 	}, []);
 
 	return (
-		<div className="relative" ref={menuRef}>
+		<div className="relative w-full sm:w-auto" ref={menuRef}>
 			<button
 				onClick={() => setIsOpen(!isOpen)}
-				className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+				className="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:text-gray-900 sm:w-auto sm:justify-center"
 				aria-expanded={isOpen}
 				aria-haspopup="true"
 			>
@@ -48,7 +48,7 @@ export default function LearningHubsMenu() {
 			</button>
 
 			{isOpen && (
-				<div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+				<div className="absolute left-0 mt-2 w-full max-w-[calc(100vw-2rem)] rounded-lg border border-gray-200 bg-white py-2 shadow-lg z-50 sm:left-auto sm:right-0 sm:w-80 sm:max-w-none">
 					{LEARNING_HUBS.map((hub) => (
 						<a
 							key={hub.name}
