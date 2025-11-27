@@ -42,7 +42,7 @@ function App() {
 					<div className="flex items-center gap-3">
 						<a
 							href="https://buildwithangel.com/"
-							target="_blank"
+							target="_self"
 							rel="noopener noreferrer"
 							className="flex-shrink-0 transition-opacity hover:opacity-80"
 							aria-label="Visit buildwithangel.com"
